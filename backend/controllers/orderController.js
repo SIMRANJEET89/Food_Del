@@ -7,7 +7,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 // PLACE ORDER
 const placeOrder = async (req, res) => {
   try {
-    const frontend_url = "http://localhost:5173"; // apna correct port rakho
+    const frontend_url = "https://food-del-frontend-gxrc.onrender.com"; // apna correct port rakho
 
     // 1️⃣ Save order in DB
     const newOrder = new orderModel({
