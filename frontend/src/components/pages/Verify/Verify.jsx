@@ -14,7 +14,8 @@ const Verify = () => {
 
                      
     const verifyPayment = async () =>{
-        const response = await axios.post(url+"/api/order/verify", {success, orderId})
+        // const response = await axios.get(url+"/api/order/verify", {success, orderId})
+        const response = await axios.get(`${url}/api/order/verify?success=${success}&orderId=${orderId}`)
         if (response.data.success){
             navigate('/myorders');
         }
