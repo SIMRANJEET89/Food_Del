@@ -1,0 +1,12 @@
+# ignore all env files anywhere
+.env
+
+# dependencies
+node_modules
+
+# builds
+dist
+build
+
+# system
+.DS_Store
